@@ -11,9 +11,9 @@
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
         });
-        
+
         document.addEventListener('keydown', function(e) {
-            if (e.key === 'F12' || 
+            if (e.key === 'F12' ||
                 (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) ||
                 (e.ctrlKey && e.key === 'U')) {
                 e.preventDefault();
@@ -29,12 +29,12 @@
             <div class="logo">
                 <img src="logo.png" alt="Forefront Innovations Logo" class="logo-image">
             </div>
-            
+
             <!-- Mobile Menu Toggle -->
             <button class="mobile-menu-toggle" aria-label="Toggle menu">
                 <i class="fas fa-bars"></i>
             </button>
-            
+
             <nav class="main-nav">
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -46,6 +46,10 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <button class="theme-toggle" aria-label="Toggle theme" id="themeToggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun" style="display: none;"></i>
+            </button>
         </div>
     </header>
 
@@ -56,6 +60,52 @@
                 <h1>Cultivating <span>Sustainable</span> Agricultural Futures</h1>
                 <p>We are a research-driven initiative focused on solving post-harvest losses in Africa through science and technology. Our flagship project, Fresh Guard, is a nanoparticle-based solution designed to reduce microbial spoilage in staple crops, starting with yams. By combining biochemistry, biotechnology, and agritech innovation, we aim to extend shelf life, improve food safety, and protect farmers' incomes while strengthening food security across local and regional markets.</p>
                 <div class="hero-buttons">
+                    <a href="#contact" class="cta-button">Get Started</a>
+                    <a href="#services" class="outline-button">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Innovative Services</h2>
+                <p>Comprehensive solutions for modern agricultural challenges</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Biochemical Research</h3>
+                    <p>Advanced nanoparticle research and development for post-harvest preservation solutions.</p>
+                    <a href="https://wa.me/233592669974" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Sustainable Farming</h3>
+                    <p>Eco-friendly agricultural practices and organic farming consultation services.</p>
+                    <a href="https://wa.me/233592669974" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Crop Management</h3>
+                    <p>Comprehensive crop monitoring and yield optimization strategies.</p>
+                    <a href="https://wa.me/233592669974" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Training & Workshops</h3>
+                    <p>Farmer education programs and modern agricultural technique training.</p>
+                    <a href="https://wa.me/233592669974" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -65,18 +115,29 @@
     <section class="products" id="products">
         <div class="container">
             <div class="section-title">
-                <h2>Our Premium Product</h2>
+                <h2>Our Premium Products</h2>
                 <p>Fresh, organic product from experts in the field of biochemistry, biotechnology, and agritech</p>
             </div>
             <div class="products-grid">
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="Product.jpg" alt="Organic Vegetables">
+                        <img src="Product.jpg" alt="FreshGuard Product">
                     </div>
                     <div class="product-info">
                         <h3>FreshGuard</h3>
-                        <p>Fresh, pesticide-free vegetables grown using sustainable methods</p>
-                        <span class="product-price">$5.00/kg</span>
+                        <p>Nanoparticle-based solution to reduce microbial spoilage and extend shelf life of crops</p>
+                        <span class="product-price">Contact for Pricing</span>
+                    </div>
+                </div>
+               
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="Fresh c.jpg" alt="Fresh Crops">
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Organic Crops</h3>
+                        <p>Fresh, pesticide-free crops grown using sustainable methods</p>
+                        <span class="product-price">Market Price</span>
                     </div>
                 </div>
             </div>
@@ -93,11 +154,27 @@
             <div class="team-grid">
                 <div class="team-member">
                     <div class="member-photo">
+                        <img src="Ste.png" alt="Stephen Yachim Nwati">
+                    </div>
+                    <h3>Mr. Stephen Yachim Nwati</h3>
+                    <p class="member-role">Founder and CEO</p>
+                    <p class="member-bio">Specialist in water management and efficient irrigation solutions</p>
+                    <div class="member-social-links">
+                        <a href="linkedin.com/in/stephen-yachim-nwati-452622290" class="social-link linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:stevecrown2792@gmail.com" class="social-link email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
                         <img src="Dr. Michael.jpg" alt="Dr. Michael">
                     </div>
                     <h3>Dr. Baah Mensah</h3>
                     <p class="member-role">Agricultural Coach and Mentor</p>
                     <p class="member-bio">PhD in Agricultural Science with 15+ years experience in sustainable farming</p>
+                    <div class="member-social-links">
+                        <a href="#" class="social-link linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:baah@forefrontinnovations.com" class="social-link email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
                 <div class="team-member">
                     <div class="member-photo">
@@ -106,14 +183,34 @@
                     <h3>Dr. Jeffery Kweku Dadson</h3>
                     <p class="member-role">Agricultural Coach and Mentor</p>
                     <p class="member-bio">Expert in modern farming techniques and equipment management</p>
+                    <div class="member-social-links">
+                        <a href="#" class="social-link linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:jeffery@forefrontinnovations.com" class="social-link email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
                 <div class="team-member">
                     <div class="member-photo">
-                        <img src="Moses.jpg" alt="moses">
+                        <img src="Mos.png" alt="moses">
                     </div>
                     <h3>Mr. Osah Moses Kwesi</h3>
                     <p class="member-role">Operations Manager</p>
                     <p class="member-bio">Ensures all our products meet strict organic standards</p>
+                    <div class="member-social-links">
+                        <a href="linkedin.com/in/moses-osah-68881223a" class="social-link linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="osahmoses1234@gmail.com" class="social-link email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="Ernest.jpg" alt="moses">
+                    </div>
+                    <h3>Mr. Ernest Asiamah</h3>
+                    <p class="member-role">Head of Logistics</p>
+                    <p class="member-bio">Ensures all our products are packaged, tracked, and delivered to the right customers</p>
+                    <div class="member-social-links">
+                        <a href="#" class="social-link linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:ernest@forefrontinnovations.com" class="social-link email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
                 <div class="team-member">
                     <div class="member-photo">
@@ -122,6 +219,10 @@
                     <h3>Mr. Oguah Richard</h3>
                     <p class="member-role">Financial Secretary</p>
                     <p class="member-bio">Specialist in water management and efficient irrigation solutions</p>
+                    <div class="member-social-links">
+                        <a href="linkedin.com/in/richardwhyttoguah" class="social-link linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:whyttoguah@gmail.com" class="social-link email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
                 <div class="team-member">
                     <div class="member-photo">
@@ -130,30 +231,34 @@
                     <h3>Miss Princella Nti</h3>
                     <p class="member-role">Product Manager</p>
                     <p class="member-bio">Specialist in water management and efficient irrigation solutions</p>
-                </div>
-                <div class="team-member">
-                    <div class="member-photo">
-                        <img src="Stephen.jpg" alt="stephen">
+                    <div class="member-social-links">
+                        <a href="inkedin.com/in/priscilla-nti-41a11923a" class="social-link linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:priscillanynti@gmail.com" class="social-link email" aria-label="Email"><i class="fas fa-envelope"></i></a>
                     </div>
-                    <h3>Mr. Stephen Yachim Nwati</h3>
-                    <p class="member-role">Founder and CEO</p>
-                    <p class="member-bio">Specialist in water management and efficient irrigation solutions</p>
                 </div>
                 <div class="team-member">
                     <div class="member-photo">
-                        <img src="Gideon.jpg" alt="gideon">
+                        <img src="Gideon.png" alt="gideon">
                     </div>
                     <h3>Mr. Gideon Nwati</h3>
                     <p class="member-role">R&D Manager</p>
                     <p class="member-bio">Specialist in water management and efficient irrigation solutions</p>
+                    <div class="member-social-links">
+                        <a href="#" class="social-link linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:gideon@forefrontinnovations.com" class="social-link email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
                 <div class="team-member">
                     <div class="member-photo">
-                        <img src="Bless.jpeg" alt="David Okafor">
+                        <img src="Bless.png" alt="David Okafor">
                     </div>
                     <h3>Mr. Bless Lawer Koranteng</h3>
-                    <p class="member-role">Irrigation Systems Engineer</p>
-                    <p class="member-bio">Specialist in water management and efficient irrigation solutions</p>
+                    <p class="member-role">Field Engineer</p>
+                    <p class="member-bio">Specialist in testing and integrating of solutions</p>
+                    <div class="member-social-links">
+                        <a href="linkedin.com/in/bless-koranteng-470586241" class="social-link linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:blesskoranteng5@gmail.com" class="social-link email" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -169,43 +274,43 @@
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <p>"Forefront Innovations transformed our farm yield by 40% with their irrigation system. Their team is professional and knowledgeable."</p>
+                        <p>"Forefront Innovations, with the help of their products and expertise, we were able to store our yams for another year to sell at the right prices. Their team is professional and knowledgeable."</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="James Wilson">
+                            <img src="man1.jpeg" alt="James Wilson">
                         </div>
                         <div class="author-info">
-                            <h4>Jake</h4>
-                            <p>Wilson Family Farms</p>
+                            <h4>Kweku Jason</h4>
+                            <p>Kweku Family Farms</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <p>"The organic seeds provided exceptional germination rates. Our vegetable quality has never been better!"</p>
+                        <p>"The organic products provided exceptional germination rates. Our vegetable quality has never been better!"</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
-                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Maria Garcia">
+                            <img src="woman.jpeg" alt="Maria Garcia">
                         </div>
                         <div class="author-info">
-                            <h4>Maria Garcia</h4>
+                            <h4>Kpala Garcia</h4>
                             <p>Garcia Organic Produce</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <p>"Their crop consultation service helped us identify soil issues we never knew existed. Highly recommended!"</p>
+                        <p>"Their crop consultation service and with the help of their Fresh Guard helped in a way we never knew existed. Highly recommended!"</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Robert Kim">
+                            <img src="man2.jpeg" alt="Robert Kim">
                         </div>
                         <div class="author-info">
-                            <h4>Robert Kim</h4>
-                            <p>Kim Agricultural Co.</p>
+                            <h4>Nabi Tobi Gbe</h4>
+                            <p>Nabi Farms</p>
                         </div>
                     </div>
                 </div>
@@ -220,15 +325,15 @@
                 <div class="about-text">
                     <h2>Our Agricultural Journey</h2>
                     <div id="journey-teaser">
-                        <p>Forefront Innovations Limited was founded to bridge the gap between scientific research and real-world agricultural solutions. The company emerged from an innovation-driven research environment, where our team recognized post-harvest losses—driven largely by microbial spoilage—as a persistent challenge facing farmers and food systems across Ghana and Africa...</p>
+                        <p>Forefront Innovations Limited was founded to bridge the gap between scientific research and real-world agricultural solutions. The company emerged from an innovation-driven research environment, where our team recognized post-harvest lossesΓÇödriven largely by microbial spoilageΓÇöas a persistent challenge facing farmers and food systems across Ghana and Africa...</p>
                         <button id="read-more-btn" class="read-more-btn">
                             <span>READ MORE</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                     </div>
-                    
+
                     <div id="journey-full" style="display: none;">
-                        <p>Forefront Innovations Limited was founded to bridge the gap between scientific research and real-world agricultural solutions. The company emerged from an innovation-driven research environment, where our team recognized post-harvest losses—driven largely by microbial spoilage—as a persistent challenge facing farmers and food systems across Ghana and Africa.</p>
+                        <p>Forefront Innovations Limited was founded to bridge the gap between scientific research and real-world agricultural solutions. The company emerged from an innovation-driven research environment, where our team recognized post-harvest lossesΓÇödriven largely by microbial spoilageΓÇöas a persistent challenge facing farmers and food systems across Ghana and Africa.</p>
                         <p>Our work led to the development of Fresh Guard, a science-based, nanoparticle solution designed to reduce microbial activity and extend the shelf life of staple crops such as yams. Since inception, our focus has been on rigorous research, product development, and continuous validation to ensure safety, effectiveness, and relevance to local agricultural contexts.</p>
                         <p>We are currently in the pre-launch phase, strengthening our technical foundation, engaging key stakeholders, and preparing for regulatory approval and market entry. This stage has been critical in refining our solution and aligning it with the needs of farmers and the broader food value chain.</p>
                         <p>At Forefront Innovations, we are driven by a long-term vision: to reduce post-harvest losses, improve food security, and deliver science-led innovations that create sustainable impact.</p>
@@ -237,7 +342,7 @@
                             <i class="fas fa-chevron-up"></i>
                         </button>
                     </div>
-                    
+
                     <div class="stats">
                         <div class="stat-item">
                             <div class="stat-number">2</div>
@@ -253,28 +358,12 @@
                         </div>
                         <div class="stat-item">
                             <div class="stat-number">10000+</div>
-                            <div class="stat-label">Customers Served</div>
+                            <div class="stat-label">Customers To Be Served</div>
                         </div>
                     </div>
                 </div>
                 <div class="about-image">
                     <img src="Farm.jpg" alt="Our Farm">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-    <section class="developer-section">
-        <div class="container">
-            <div class="developer-card">
-                <div class="developer-icon">
-                    <i class="fas fa-code"></i>
-                </div>
-                <h3>Developed by</h3>
-                <p>Jacob Tser Doku</p>
-                <a href="https://www.linkedin.com/in/jacob-tser-doku-1360a8202/" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://wa.me/233559499007" class="social-link" aria-label="LinkedIn"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>
@@ -336,6 +425,10 @@
                 </div>
                 <div class="contact-form">
                     <form id="contactForm" action="https://formspree.io/f/mjgbjrer" method="POST">
+                        <input type="hidden" name="_subject" value="New Contact Form Submission - Forefront Innovations">
+                        <input type="hidden" name="_replyto" value="osahmosese1234@gmail.com">
+                        <input type="hidden" name="_cc" value="jacobtser20@gmail.com">
+                        
                         <div class="form-group">
                             <label for="name">Full Name *</label>
                             <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
@@ -397,15 +490,52 @@
                     <h3>Quick Links</h3>
                     <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
                         <li><a href="#products">Products</a></li>
                         <li><a href="#team">Our Team</a></li>
                         <li><a href="#about">About Us</a></li>
                     </ul>
                 </div>
+                <div class="footer-column">
+                    <h3>Our Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="#products">FreshGuard</a></li>
+                        <li><a href="#products">FreshGuard Concentrated</a></li>
+                        <li><a href="#products">Organic Crops</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Biochemical Research</a></li>
+                        <li><a href="#services">Sustainable Farming</a></li>
+                        <li><a href="#services">Crop Management</a></li>
+                        <li><a href="#services">Training & Workshops</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Forefront Innovations Ltd. All Rights Reserved.</p>
-                <p class="footer-links-small"></p>
+                <div class="developer-credits">
+                    <p class="credit-text">
+                        <span>Website Developed with</span>
+                        <i class="fas fa-brain" style="color: #ff4444; margin: 0 5px;"></i>
+                        <span>by</span>
+                        <a href="https://www.linkedin.com/in/jacob-tser-doku-1360a8202/" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="developer-link">
+                            Jake's Engineering
+                        </a>
+                        <span class="separator">•</span>
+                        <a href="https://wa.me/233559499007" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           class="developer-contact">
+                            <i class="fab fa-whatsapp"></i> Contact Us...
+                        </a>
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
@@ -413,7 +543,7 @@
     <!-- JavaScript Files -->
     <script src="main.js"></script>
     <script src="form-handler.js"></script>
-    
+
     <!-- Added script for Read More functionality -->
     <script>
         // Read More functionality for "Our Journey" section
@@ -422,7 +552,7 @@
             const readLessBtn = document.getElementById('read-less-btn');
             const journeyTeaser = document.getElementById('journey-teaser');
             const journeyFull = document.getElementById('journey-full');
-            
+
             if (readMoreBtn && readLessBtn) {
                 readMoreBtn.addEventListener('click', function() {
                     journeyTeaser.style.display = 'none';
@@ -430,7 +560,7 @@
                     // Smooth scroll to the section
                     journeyFull.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 });
-                
+
                 readLessBtn.addEventListener('click', function() {
                     journeyFull.style.display = 'none';
                     journeyTeaser.style.display = 'block';
